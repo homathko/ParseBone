@@ -32,3 +32,4 @@
 // =require role.js
 // =require collection.js
 // =require view.js
+// =require user.js
