@@ -10,10 +10,13 @@
  * Copyright 2009-2012 Jeremy Ashkenas, DocumentCloud Inc.
  * Released under the MIT license.
  */
-;(function (root) {
+
+/* eslint-disable semi */
+(function (root) {
   root.Parse = root.Parse || {}
   root.Parse.VERSION = 'js1.5.0'
-}(this))
+}(this));
+/* eslint-enable semi */
 
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
