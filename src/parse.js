@@ -13,8 +13,7 @@
   // Load references to other dependencies
   if (typeof (XMLHttpRequest) !== 'undefined') {
     Parse.XMLHttpRequest = XMLHttpRequest
-  } else if (typeof (require) === 'function' &&
-    typeof (require.ensure) === 'undefined') {
+  } else if (req && typeof (require.ensure) === 'undefined') {
     Parse.XMLHttpRequest = req('xmlhttprequest').XMLHttpRequest
   }
   // Import Parse's local copy of underscore.
