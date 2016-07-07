@@ -14,7 +14,8 @@ gulp.task('compileJs', function (cb) {
       umdNamedDefine: true,
       filename: configVars['js']['outputFile'],
       path: './' + configVars['global']['outputPath'],
-      devtoolModuleFilenameTemplate: '/[resource-path]'
+      devtoolModuleFilenameTemplate: '/[resource-path]',
+      pathinfo: true
     },
     module: {
       loaders: [
@@ -29,6 +30,8 @@ gulp.task('compileJs', function (cb) {
         }
       ]
     },
+    devtool: 'source-map',
+    debug: true,
     cache: true
   }, function (err, res) {
     if (err) {

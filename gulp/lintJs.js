@@ -8,8 +8,7 @@ var configVars = require('../configVars.js')
  */
 gulp.task('lintJs', function (cb) {
   standard.lintFiles(configVars['js']['srcPath'] + configVars['js']['fileGlob'], {
-    parser: 'babel-eslint',
-    ignore: [configVars['js']['testFileGlob']]
+    parser: 'babel-eslint'
   }, function (err, res) {
     if (err) {
       console.error(err)
