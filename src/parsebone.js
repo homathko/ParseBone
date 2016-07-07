@@ -36,3 +36,4 @@
 // =require session.js
 // =require query.js
 // =require facebookutils.js
+// =require history.js
