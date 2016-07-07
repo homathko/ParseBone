@@ -19,3 +19,4 @@
 // =require parse.js
 // =require storage.js
 // =require analytics.js
+// =require config.js
