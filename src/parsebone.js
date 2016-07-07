@@ -18,3 +18,4 @@
 // =require underscore/underscore.js
 // =require parse.js
 // =require storage.js
+// =require analytics.js
