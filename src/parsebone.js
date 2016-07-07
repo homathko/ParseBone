@@ -24,3 +24,4 @@
 // =require events.js
 // =require geopoint.js
 // =require acl.js
+// =require op.js
