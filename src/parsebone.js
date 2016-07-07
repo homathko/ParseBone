@@ -37,3 +37,4 @@
 // =require query.js
 // =require facebookutils.js
 // =require history.js
+// =require router.js
