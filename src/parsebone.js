@@ -29,3 +29,4 @@
 // =require promise.js
 // =require file.js
 // =require object.js
+// =require role.js
