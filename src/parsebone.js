@@ -34,3 +34,4 @@
 // =require view.js
 // =require user.js
 // =require session.js
+// =require query.js
