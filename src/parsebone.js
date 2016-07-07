@@ -30,3 +30,4 @@
 // =require file.js
 // =require object.js
 // =require role.js
+// =require collection.js
