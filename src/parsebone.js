@@ -31,3 +31,4 @@
 // =require object.js
 // =require role.js
 // =require collection.js
+// =require view.js
