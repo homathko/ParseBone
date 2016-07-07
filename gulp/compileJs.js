@@ -1,44 +1,29 @@
 var gulp = require('gulp')
-var webpack = require('webpack')
+var path = require('path')
+var include = require('gulp-include')
+var uglify = require('gulp-uglify')
+var rename = require('gulp-rename')
+var sourcemaps = require('gulp-sourcemaps')
 var configVars = require('../configVars.js')
 
 /**
  * Transpile and minify source JavaScript code using Webpack and Babel
  */
 gulp.task('compileJs', function (cb) {
-  webpack({
-    entry: './' + configVars['js']['srcPath'] + configVars['js']['entryFile'],
-    output: {
-      library: configVars['js']['libraryName'],
-      libraryTarget: 'umd',
-      umdNamedDefine: true,
-      filename: configVars['js']['outputFile'],
-      path: './' + configVars['global']['outputPath'],
-      devtoolModuleFilenameTemplate: '/[resource-path]',
-      pathinfo: true
-    },
-    module: {
-      loaders: [
-        {
-          test: /^(.(?!\.spec))*\.js$/,
-          loader: 'babel',
-          query: {
-            presets: ['es2015'],
-            plugins: ['transform-object-assign'],
-            cacheDirectory: true
-          }
-        }
+  return gulp.src('./' + configVars['js']['srcPath'] + configVars['js']['entryFile'])
+    .pipe(include({
+      extensions: 'js',
+      hardFail: true,
+      includePaths: [
+        path.join(__dirname, '../node_modules')
       ]
-    },
-    devtool: 'source-map',
-    debug: true,
-    cache: true
-  }, function (err, res) {
-    if (err) {
-      console.error(err)
-      process.exit(1)
-    } else {
-      cb()
-    }
-  })
+    }))
+    .pipe(gulp.dest('./' + configVars['global']['outputPath']))
+    .pipe(sourcemaps.init())
+    .pipe(uglify({
+      preserveComments: 'license'
+    }))
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./' + configVars['global']['outputPath'] + configVars['js']['outputPath']))
 })

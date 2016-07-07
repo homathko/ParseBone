@@ -16,33 +16,29 @@
     "name": "Luis Rodrigues",
     "url": "https://github.com/MrSlide"
   },
-  "main": "src/parse.js",
+  "main": "build/parsebone.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MrSlide/ParseBone.git"
   },
   "files": [
-    "build/",
-    "src/"
+    "build/"
   ],
   "devDependencies": {
-    "babel-core": "^6.9.1",
-    "babel-eslint": "^6.0.4",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-object-assign": "^6.5.0",
-    "babel-preset-es2015": "^6.9.0",
     "fs-extra": "^0.30.0",
     "gulp": "^3.9.1",
+    "gulp-include": "^2.3.0",
     "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
     "gulp-watch": "^4.3.5",
     "recursive-readdir-sync": "^1.0.6",
     "run-sequence": "^1.1.5",
     "standard": "^7.0.1",
-    "underscore": "^1.8.3",
-    "webpack": "^1.13.1"
+    "underscore": "^1.8.3"
   },
   "standard": {
-    "parser": "babel-eslint",
     "globals": [
       "$"
     ]
