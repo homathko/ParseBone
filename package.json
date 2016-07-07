@@ -40,7 +40,11 @@
   },
   "standard": {
     "globals": [
-      "$"
+      "$",
+      "_"
+    ],
+    "env": [
+      "browser"
     ]
   }
 }

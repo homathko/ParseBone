@@ -15,7 +15,8 @@ gulp.task('compileJs', function (cb) {
       extensions: 'js',
       hardFail: true,
       includePaths: [
-        path.join(__dirname, '../node_modules')
+        path.join(__dirname, '../node_modules'),
+        path.join(__dirname, '../src')
       ]
     }))
     .pipe(gulp.dest('./' + configVars['global']['outputPath']))
