@@ -25,3 +25,4 @@
 // =require geopoint.js
 // =require acl.js
 // =require op.js
+// =require relation.js
