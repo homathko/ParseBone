@@ -22,3 +22,4 @@
 // =require config.js
 // =require error.js
 // =require events.js
+// =require geopoint.js
