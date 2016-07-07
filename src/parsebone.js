@@ -21,3 +21,4 @@
 // =require analytics.js
 // =require config.js
 // =require error.js
+// =require events.js
