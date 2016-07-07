@@ -20,3 +20,4 @@
 // =require storage.js
 // =require analytics.js
 // =require config.js
+// =require error.js
