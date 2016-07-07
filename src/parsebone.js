@@ -38,3 +38,4 @@
 // =require facebookutils.js
 // =require history.js
 // =require router.js
+// =require cloud.js
