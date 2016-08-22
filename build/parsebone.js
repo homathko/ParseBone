@@ -1962,7 +1962,7 @@ if ((typeof define === 'function' && define.amd) || (typeof module === 'object' 
       if (url.charAt(url.length - 1) !== '/') {
         url += '/'
       }
-      url += '1/' + route
+      url += route
       if (className) {
         url += '/' + className
       }
