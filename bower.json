@@ -1,13 +1,12 @@
 {
   "name": "parsebone",
-  "description": "Wrapper around the Parse JS SDK that gives it the Backbone features it used to have.",
+  "description": "Parse 1.5.0 modified to be compatible with the open-source Parse server.",
   "main": [
     "build/parsebone.js"
   ],
   "moduleType": [
     "globals",
-    "amd",
-    "es6"
+    "amd"
   ],
   "keywords": [
     "date",

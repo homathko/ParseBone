@@ -1,7 +1,7 @@
 {
   "name": "parsebone",
-  "version": "0.1.0-alpha.1",
-  "description": "Wrapper around the Parse JS SDK that gives it the Backbone features it used to have.",
+  "version": "0.1.0",
+  "description": "Parse 1.5.0 modified to be compatible with the open-source Parse server.",
   "keywords": [
     "parse",
     "backbone",
