@@ -1962,6 +1962,9 @@ if ((typeof define === 'function' && define.amd) || (typeof module === 'object' 
       if (url.charAt(url.length - 1) !== '/') {
         url += '/'
       }
+      if (Parse.serverURL.indexOf('https://api.parse.com') === 0) {
+        url += '1/'
+      }
       url += route
       if (className) {
         url += '/' + className
