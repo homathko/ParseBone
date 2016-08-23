@@ -23,4 +23,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [Latest]: https://github.com/MrSlide/ParseBone/tree/master
 [Unreleased]: https://github.com/MrSlide/ParseBone/tree/develop
+[v0.2.0]: https://github.com/MrSlide/ParseBone/tree/v0.2.0
 [v0.1.0]: https://github.com/MrSlide/ParseBone/tree/v0.1.0
