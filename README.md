@@ -80,6 +80,11 @@ No, you should be able to upgrade to the latest versions of the [Parse JS SDK](h
 Some routes of the Parse API have changed, and ParseBone was updated to use the new routes.
 
 
+### Where can I find documentation for the library?
+
+ParseBone has the exact same API as the original [Parse JS SDK](https://github.com/ParsePlatform/Parse-SDK-JS) version 1.5.0. You can find a guide for the JS SDK at [parseplatform.github.io/docs/js/guide](http://parseplatform.github.io/docs/js/guide/). For the [Backbone](http://backbonejs.org/)-style functionality, you can find documentation on the official web site at [backbonejs.org](http://backbonejs.org/). Please note that just like the original version 1.5.0 of the [Parse JS SDK](https://github.com/ParsePlatform/Parse-SDK-JS), the Backbone features included vary slightly.
+
+
 ### Does ParseBone have the newer features of the [Parse JS SDK](https://github.com/ParsePlatform/Parse-SDK-JS)?
 
 No. ParseBone is a copy of version 1.5.0 of the [Parse JS SDK](https://github.com/ParsePlatform/Parse-SDK-JS), with some changes.
@@ -98,6 +103,11 @@ The source code was modified to conform to the linting rules of [Standard](http:
 ### Do I need to make any changes on my Cloud code?
 
 There are no changes required for ParseBone, but you do need to make some changes to migrate to the open-source [Parse Server](https://github.com/ParsePlatform/parse-server). There is a migration guide available at [parse.com/migration](https://parse.com/migration).
+
+
+### Is this library tested?
+
+The library is not tested using automated testing like unit testing or end-to-end testing, but it has been used in production code and is working as expected. Still, if you find bugs, please open an issue.
 
 
 
